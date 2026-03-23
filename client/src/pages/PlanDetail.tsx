@@ -148,7 +148,7 @@ export default function PlanDetail() {
                 </h3>
               </div>
               <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
-                ご希望の日程・人数に合わせて、AIが最新の空き状況と<br className="hidden sm:block" />
+                ご希望の日程・人数に合わせて、LGOが最新の空き状況と<br className="hidden sm:block" />
                 正確な見積もりを<strong className="text-foreground">1分</strong>でお届けします。<br />
                 人気プランのため、今すぐ確認をおすすめします。
               </p>
@@ -182,24 +182,9 @@ export default function PlanDetail() {
                 <MessageCircle size={18} />
                 このプランの空き状況をLINEで確認する
               </a>
-              <p className="text-xs text-muted-foreground mt-3">完全無料・1分で回答 · 成約特典で思い出AI動画も無料</p>
+              <p className="text-xs text-muted-foreground mt-3">完全無料・1分で回答 · 成約特典で思い出動画も無料</p>
             </div>
 
-            {/* Testimonial */}
-            <div className="bg-white rounded-2xl p-5 border border-border">
-              <h2 className="font-bold text-base mb-4 section-heading" style={{ color: "oklch(0.22 0.06 250)" }}>利用者の声</h2>
-              <div className="mt-4">
-                <div className="flex items-center gap-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={14} className="text-yellow-400" fill="currentColor" />
-                  ))}
-                </div>
-                <p className="text-sm text-foreground leading-relaxed mb-3">
-                  「{plan.testimonial.text}」
-                </p>
-                <p className="text-xs text-muted-foreground font-medium">{plan.testimonial.name}</p>
-              </div>
-            </div>
           </div>
 
           {/* Sidebar */}
@@ -231,11 +216,11 @@ export default function PlanDetail() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle size={12} style={{ color: "oklch(0.72 0.15 210)" }} />
-                    <span>AIが1分で回答</span>
+                    <span>LGOが1分で回答</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle size={12} style={{ color: "oklch(0.72 0.15 210)" }} />
-                    <span>成約特典：思い出AI動画が無料</span>
+                    <span>成約特典：思い出動画が無料</span>
                   </div>
                 </div>
               </div>

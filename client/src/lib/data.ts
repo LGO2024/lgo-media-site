@@ -147,7 +147,7 @@ export const plans: Plan[] = [
     reviewScore: 4.8,
     testimonial: {
       name: "〇〇大学 ゼミ OB会 佐藤さん",
-      text: "卒業旅行に使いました。最高の思い出になりました。LGO旅チェックのAI提案がなければ見つけられなかった宿です。",
+      text: "卒業旅行に使いました。最高の思い出になりました。LGO旅チェックがなければ見つけられなかった宿です。",
     },
   },
   {
@@ -203,9 +203,9 @@ export const articles: Article[] = [
   },
   {
     id: "ai-yado-search",
-    title: "もう見積もりで消耗しない。合宿の宿探しをAIで劇的に効率化する方法",
-    excerpt: "複数の宿に問い合わせ、返信を待ち、比較する…その手間、全部AIに任せてみませんか？最新のAI活用術を紹介。",
-    category: "AI活用",
+    title: "もう見積もりで消耗しない。合宿の宿探しをLGOで劇的に効率化する方法",
+    excerpt: "複数の宿に問い合わせ、返信を待ち、比較する…その手間、全部LGOに任せてみませんか？最新の活用術を紹介。",
+    category: "活用術",
     readTime: 5,
     publishedAt: "2026-02-15",
     image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",

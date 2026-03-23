@@ -35,17 +35,17 @@ export default function Home() {
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4 border border-white/20">
               <Zap size={12} className="text-yellow-300" />
-              AIが1分で3プラン提案
+              LGOが1分で3プラン提案
             </div>
             <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4" style={{ fontFamily: "Noto Sans JP, sans-serif", textShadow: "0 2px 12px rgba(0,0,0,0.3)" }}>
               めんどい合宿準備、<br />
-              <span style={{ color: "oklch(0.85 0.15 210)" }}>AIに1分で</span><br />
+              <span style={{ color: "oklch(0.85 0.15 210)" }}>LGOに1分で</span><br />
               丸投げ。
             </h1>
             <p className="text-white/85 text-sm md:text-base mb-8 leading-relaxed">
               サークル・ゼミの合宿幹事さん向け。<br />
-              宿探し・見積もり・比較を全部AIが代行。<br />
-              成約特典で<strong className="text-white">思い出AI動画も完全無料</strong>。
+              宿探し・見積もり・比較を全部LGOが代行。<br />
+              成約特典で<strong className="text-white">思い出動画も完全無料</strong>。
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -84,8 +84,8 @@ export default function Home() {
             {[
               {
                 icon: <Zap size={24} style={{ color: "oklch(0.72 0.15 210)" }} />,
-                title: "AIが1分で3択提案",
-                desc: "人数・予算・エリアを入力するだけ。AIが膨大な宿から最適な3プランを即座に提案します。",
+                title: "LGOが1分で3択提案",
+                desc: "人数・予算・エリアを入力するだけ。LGOが膨大な宿から最適な3プランを即座に提案します。",
               },
               {
                 icon: <Shield size={24} style={{ color: "oklch(0.72 0.15 210)" }} />,
@@ -94,8 +94,8 @@ export default function Home() {
               },
               {
                 icon: <Clapperboard size={24} style={{ color: "oklch(0.72 0.15 210)" }} />,
-                title: "思い出AI動画が無料",
-                desc: "LGO旅チェック経由で予約した団体に、プロ品質の旅行動画をAIが自動生成。完全無料でプレゼント。",
+                title: "思い出動画が無料",
+                desc: "LGO旅チェック経由で予約した団体に、プロ品質の旅行動画を自動生成。完全無料でプレゼント。",
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 rounded-xl bg-[oklch(0.975_0.003_240)] border border-border">
@@ -207,14 +207,14 @@ export default function Home() {
             </div>
             <p className="text-white/80 text-base mb-6">
               その悩み、<strong className="text-white">LGO旅チェックが全部解決します。</strong><br />
-              AIが1分で最適なプランを3つ提案。あとはLINEで相談するだけ。
+              LGOが1分で最適なプランを3つ提案。あとはLINEで相談するだけ。
             </p>
             <a
               href={LINE_GATEWAY_PATH}
                             className="btn-line text-base mx-auto"
             >
               <MessageCircle size={18} />
-              AIに1分で丸投げ！LINE無料診断
+              LGOに1分で丸投げ！LINE無料診断
             </a>
           </div>
         </div>
@@ -229,8 +229,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {[
               { step: "01", title: "LINEで相談", desc: "人数・予算・エリア・希望を送るだけ。1分で完了。" },
-              { step: "02", title: "AIが3プラン提案", desc: "AIが膨大な宿から最適な3つのプランを即座に提案。" },
-              { step: "03", title: "予約して完了", desc: "気に入ったプランを選べばLGO旅チェックが全部手配。特典の思い出AI動画も無料でもらえる。" },
+              { step: "02", title: "LGOが3プラン提案", desc: "LGOが膨大な宿から最適な3つのプランを即座に提案。" },
+              { step: "03", title: "予約して完了", desc: "気に入ったプランを選べばLGO旅チェックが全部手配。特典の思い出動画も無料でもらえる。" },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <div
@@ -300,30 +300,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== TESTIMONIALS ===== */}
-      <section className="py-14 bg-[oklch(0.975_0.003_240)]">
-        <div className="container">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-10 section-heading mx-auto" style={{ color: "oklch(0.22 0.06 250)" }}>
-            利用した幹事さんの声
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {plans.slice(0, 3).map((plan) => (
-              <div key={plan.id} className="bg-white rounded-2xl p-5 border border-border shadow-sm">
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={14} className="text-yellow-400" fill="currentColor" />
-                  ))}
-                </div>
-                <p className="text-sm text-foreground leading-relaxed mb-4">
-                  「{plan.testimonial.text}」
-                </p>
-                <p className="text-xs text-muted-foreground font-medium">{plan.testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== FINAL CTA ===== */}
       <section className="py-16 bg-white">
         <div className="container text-center">
@@ -336,15 +312,15 @@ export default function Home() {
             </h2>
             <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
               LINEを開いて、人数・予算・エリアを送るだけ。<br />
-              AIが1分で最適なプランを3つ提案します。<br />
-              <strong className="text-foreground">完全無料・成約特典で思い出AI動画もプレゼント。</strong>
+              LGOが1分で最適なプランを3つ提案します。<br />
+              <strong className="text-foreground">完全無料・成約特典で思い出動画もプレゼント。</strong>
             </p>
             <a
               href={LINE_GATEWAY_PATH}
                             className="btn-line text-base mx-auto"
             >
               <MessageCircle size={18} />
-              AIに1分で丸投げ！LINE無料診断
+              LGOに1分で丸投げ！LINE無料診断
             </a>
           </div>
         </div>
