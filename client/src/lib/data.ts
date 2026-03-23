@@ -1,7 +1,7 @@
 // LGO サイト共通データ定義
 // Design: Japanese Editorial × Digital-Native
 
-export const LINE_URL = "https://lin.ee/Y6CJmpm";
+export const LINE_URL = "https://lin.ee/X3UQbkT";
 export const LINE_FALLBACK_URL = "https://line.me/R/ti/p/@006knvig";
 export const LINE_GATEWAY_PATH = "/line";
 
