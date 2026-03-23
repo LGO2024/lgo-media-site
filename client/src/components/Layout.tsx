@@ -44,7 +44,6 @@ export function Header() {
               <span className="font-bold text-base" style={{ color: "oklch(0.22 0.06 250)", fontFamily: "Noto Sans JP, sans-serif" }}>
                 LGO旅チェック
               </span>
-              <span className="text-xs ml-1" style={{ color: "oklch(0.55 0.03 240)" }}>合宿・旅行AIマッチング</span>
             </div>
           </Link>
 
@@ -93,7 +92,7 @@ export function Header() {
               onClick={() => setMenuOpen(false)}
             >
               <MessageCircle size={16} />
-              AIに1分で丸投げ！LINE無料診断
+              LGOに1分で丸投げ！LINE無料診断
             </a>
           </div>
         </div>
@@ -115,7 +114,7 @@ export function Footer() {
               <span className="font-bold text-white">LGO旅チェック</span>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
-              大学生の合宿・旅行をAIが1分でマッチング。<br />
+              大学生の合宿・旅行をLGOが1分でマッチング。<br />
               幹事の面倒な宿探し・見積もりを全部丸投げ。
             </p>
           </div>
@@ -128,7 +127,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-sm font-bold mb-3 text-white">無料診断</h4>
-            <p className="text-sm text-white/60 mb-4">AIが1分で最適なプランを3つ提案。完全無料でご利用いただけます。</p>
+            <p className="text-sm text-white/60 mb-4">LGOが1分で最適なプランを3つ提案。完全無料でご利用いただけます。</p>
             <a
               href={LINE_GATEWAY_PATH}
                             className="inline-flex items-center gap-2 text-sm font-bold text-white px-4 py-2 rounded-full no-underline"
@@ -169,7 +168,7 @@ export function StickyCTA() {
         <div className="flex items-center gap-2">
           <MessageCircle size={20} />
           <div>
-            <div className="text-xs font-bold leading-tight">AIに1分で丸投げ！</div>
+            <div className="text-xs font-bold leading-tight">LGOに1分で丸投げ！</div>
             <div className="text-xs opacity-90 leading-tight">LINE無料診断（完全無料）</div>
           </div>
         </div>

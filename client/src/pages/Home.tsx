@@ -63,16 +63,6 @@ export default function Home() {
                 <ChevronRight size={16} />
               </Link>
             </div>
-            <div className="flex items-center gap-4 mt-6">
-              <div className="flex items-center gap-1 text-white/70 text-xs">
-                <Users size={12} />
-                <span>累計<strong className="text-white">500+</strong>名の幹事が利用</span>
-              </div>
-              <div className="flex items-center gap-1 text-white/70 text-xs">
-                <Star size={12} className="text-yellow-300" fill="currentColor" />
-                <span>満足度<strong className="text-white">4.8</strong>/5.0</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
