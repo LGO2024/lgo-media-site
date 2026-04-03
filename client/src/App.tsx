@@ -10,6 +10,7 @@ import PlanDetail from "./pages/PlanDetail";
 import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
 import LineGateway from "./pages/LineGateway";
+import CheckPage from "./pages/CheckPage";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/articles" component={Articles} />
       <Route path="/articles/:id" component={ArticleDetail} />
       <Route path="/line" component={LineGateway} />
+      <Route path="/check" component={CheckPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
