@@ -11,6 +11,7 @@ import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
 import LineGateway from "./pages/LineGateway";
 import CheckPage from "./pages/CheckPage";
+import ChatPage from "./pages/ChatPage";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/articles/:id" component={ArticleDetail} />
       <Route path="/line" component={LineGateway} />
       <Route path="/check" component={CheckPage} />
+      <Route path="/chat" component={ChatPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
