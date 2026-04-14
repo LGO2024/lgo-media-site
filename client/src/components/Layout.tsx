@@ -138,8 +138,12 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-6 text-center text-xs text-white/40">
-          © 2026 LGO旅チェック. All rights reserved.
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-white/40">
+          <span>© 2026 LGO旅チェック. All rights reserved.</span>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="hover:text-white/70 no-underline text-white/40">プライバシーポリシー</Link>
+            <Link href="/contact" className="hover:text-white/70 no-underline text-white/40">お問い合わせ</Link>
+          </div>
         </div>
       </div>
     </footer>
